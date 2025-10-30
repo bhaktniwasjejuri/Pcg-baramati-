@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDYA PRIME | 2BHK & 3BHK Luxurious Flats | Baramati</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #b1006b, #ff5bb8);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header h2 {
+      margin: 5px 0 0 0;
+      font-size: 1.1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 0 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .details {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 950px;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    .details h3 {
+      color: #b1006b;
+      margin-top: 0;
+    }
+    .highlight {
+      color: #b1006b;
+      font-weight: bold;
+    }
+    .contact {
+      background-color: #ffebf5;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #b1006b;
+    }
+    .contact h2 {
+      color: #b1006b;
+      margin-bottom: 10px;
+    }
+    .phone {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Inquiry Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    form button {
+      background-color: #b1006b;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #ff5bb8;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #f0f0f0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header h2 {
+        font-size: 1rem;
+      }
+      .details {
+        font-size: 0.95rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VIDYA PRIME</h1>
+    <h2>2BHK & 3BHK LUXURIOUS FLATS</h2>
+  </header>
+
+  <section class="gallery">
+    <img src="image1.jpg" alt="Vidya Prime Front View">
+    <img src="image2.jpg" alt="Vidya Prime Side View">
+    <img src="poster.jpg" alt="Vidya Prime Advertisement Poster">
+  </section>
+
+  <section class="details">
+    <h3>प्रमुख वैशिष्ट्ये</h3>
+    <ul>
+      <li>विद्या प्रतिष्ठान कॅम्पस जवळ</li>
+      <li>सेमीफर्निश फ्लॅट</li>
+      <li>मॉल व बाजार पेठ अगदी जवळ</li>
+      <li>कार पार्किंग विथ चार्जिंग पॉइंट - <span class="highlight">रु. १५००</span></li>
+      <li>बारामतीतील पहिले <span class="highlight">ROOFTOP SITTING AREA</span></li>
+      <li>फक्त <span class="highlight">रु. ५००००</span> मध्ये बुकिंग</li>
+    </ul>
+
+    <h3>Project By</h3>
+    <p><strong>PCG DEVELOPERS</strong></p>
+
+    <h3>साईटचा पत्ता</h3>
+    <p>
+      गट नं. १९२/४/३, गुरुकुंज सोसायटी, नक्षत्र गार्डन जवळ,  
+      MIDC - जळोची रोड, बारामती
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>बुकिंगसाठी संपर्क</h2>
+    <p class="phone">📞 +91 8767366405</p>
+
+    <form onsubmit="sendInquiry(event)">
+      <input type="text" id="name" placeholder="आपले नाव" required>
+      <input type="tel" id="phone" placeholder="आपला मोबाईल नंबर" required>
+      <textarea id="message" rows="4" placeholder="आपला संदेश..." required></textarea>
+      <button type="submit">बुकिंग चौकशी पाठवा</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918767366405?text=Hello%20VIDYA%20PRIME%20Team!%20I%20am%20interested%20in%20your%20flats."
+     class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+     💬
+  </a>
+
+  <footer>
+    © 2025 VIDYA PRIME | Designed by PCG Developers
+  </footer>
+
+  <script>
+    function sendInquiry(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+      const whatsappURL = `https://wa.me/918767366405?text=New%20Booking%20Inquiry:%0AName:%20${encodeURIComponent(name)}%0APhone:%20${encodeURIComponent(phone)}%0AMessage:%20${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>
